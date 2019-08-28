@@ -14,7 +14,9 @@ defineMessages({
   },
 })
 
-const Price: FC<PriceProps & InjectedIntlProps> = ({ value }) => {
+const FormattedPrice: FC<FormattedPriceProps & InjectedIntlProps> = ({
+  value,
+}) => {
   return (
     <Fragment>
       {value === 0 ? (
@@ -26,8 +28,8 @@ const Price: FC<PriceProps & InjectedIntlProps> = ({ value }) => {
   )
 }
 
-interface PriceProps {
+interface FormattedPriceProps {
   value: number
 }
 
-export default injectIntl(Price)
+export default injectIntl(FormattedPrice)

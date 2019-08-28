@@ -4,4 +4,4 @@
 
 ## Usage
 
-Add `"vtex.price": "0.x"` to your dependencies.
+Add `"vtex.formatted-price": "0.x"` to your dependencies.

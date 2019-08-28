@@ -1,6 +1,6 @@
 {
   "vendor": "vtex",
-  "name": "price",
+  "name": "formatted-price",
   "version": "0.0.1",
   "title": "Price component",
   "description": "",
@@ -10,9 +10,7 @@
     "react": "3.x"
   },
   "mustUpdateAt": "2019-04-02",
-  "scripts": {
-    "postreleasy": "vtex publish --verbose"
-  },
+  "scripts": {},
   "dependencies": {
     "vtex.styleguide": "9.x",
     "vtex.format-currency": "0.x"

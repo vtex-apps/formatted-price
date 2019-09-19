@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## Added
+
+- Show TBA in case of undefined or null price.
+
 ## [0.1.0] - 2019-08-28
 
 ## Added

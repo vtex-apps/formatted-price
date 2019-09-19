@@ -12,6 +12,11 @@ defineMessages({
     id: 'store/price.Free',
     defaultMessage: 'FREE',
   },
+
+  TBA: {
+    id: 'store/price.TBA',
+    defaultMessage: 'TBA',
+  },
 })
 
 const FormattedPrice: FC<FormattedPriceProps & InjectedIntlProps> = ({
@@ -21,6 +26,8 @@ const FormattedPrice: FC<FormattedPriceProps & InjectedIntlProps> = ({
     <Fragment>
       {value === 0 ? (
         <FormattedMessage id="store/price.Free" />
+      ) : value === null || value === undefined ? (
+        <FormattedMessage id="store/price.TBA" />
       ) : (
         <FormattedCurrency value={value} />
       )}

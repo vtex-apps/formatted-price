@@ -1,23 +1,6 @@
 import React, { FC, Fragment } from 'react'
-import {
-  defineMessages,
-  injectIntl,
-  InjectedIntlProps,
-  FormattedMessage,
-} from 'react-intl'
+import { injectIntl, InjectedIntlProps, FormattedMessage } from 'react-intl'
 import { FormattedCurrency } from 'vtex.format-currency'
-
-defineMessages({
-  Free: {
-    id: 'store/price.Free',
-    defaultMessage: 'FREE',
-  },
-
-  TBA: {
-    id: 'store/price.TBA',
-    defaultMessage: 'TBA',
-  },
-})
 
 const FormattedPrice: FC<FormattedPriceProps & InjectedIntlProps> = ({
   value,

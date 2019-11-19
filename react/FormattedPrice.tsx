@@ -10,7 +10,7 @@ const FormattedPrice: FC<FormattedPriceProps & InjectedIntlProps> = ({
       {value === 0 ? (
         <FormattedMessage id="store/price.Free" />
       ) : value === null || value === undefined ? (
-        <FormattedMessage id="store/price.TBA" />
+        <FormattedMessage id="store/price.TBD" />
       ) : (
         <FormattedCurrency value={value} />
       )}

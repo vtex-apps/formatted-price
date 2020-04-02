@@ -1,8 +1,8 @@
 import classnames from 'classnames'
 import React, { FC } from 'react'
-import { FormattedMessage } from 'react-intl'
-import { FormattedCurrency } from 'vtex.format-currency'
 import { useCssHandles } from 'vtex.css-handles'
+
+import useFormattedPrice from './useFormattedPrice'
 
 const CSS_HANDLES = ['price'] as const
 
@@ -13,15 +13,11 @@ interface FormattedPriceProps {
 const FormattedPrice: FC<FormattedPriceProps> = ({ value }) => {
   const handles = useCssHandles(CSS_HANDLES)
 
+  const price = useFormattedPrice(value)
+
   return (
     <div className={classnames(handles.price, { 'c-success': value === 0 })}>
-      {value === 0 ? (
-        <FormattedMessage id="store/price.Free" />
-      ) : value == null ? (
-        <FormattedMessage id="store/price.TBD" />
-      ) : (
-        <FormattedCurrency value={value} />
-      )}
+      {price}
     </div>
   )
 }

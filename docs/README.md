@@ -2,7 +2,34 @@
 
 > Formatting utilities for displaying prices.
 
-<img width="131" alt="component rendering values TBD, free and 10 in BRL" src="https://user-images.githubusercontent.com/10223856/78278011-cc2f2600-74eb-11ea-9e1b-2b74c31875aa.png">
+<table>
+<tbody>
+<tr>
+<td>
+  <img width="60" alt="free label" src="https://user-images.githubusercontent.com/10223856/78281020-698c5900-74f0-11ea-96ae-c63d460e5f1c.png">
+</td>
+<td>
+  <code>&lt;FormattedPrice value={0} /&gt;</code>
+</td>
+</tr>
+<tr>
+<td>
+  <img width="60" alt="tbd label" src="https://user-images.githubusercontent.com/10223856/78281021-6a24ef80-74f0-11ea-9ba4-aa0003c48ae4.png">
+</td>
+<td>
+  <code>&lt;FormattedPrice value={null} /&gt;</code>
+</td>
+</tr>
+<tr>
+<td>
+  <img width="94" alt="10 BRL label" src="https://user-images.githubusercontent.com/10223856/78281024-6abd8600-74f0-11ea-92ff-ebe95f548016.png">
+</td>
+<td>
+  <code>&lt;FormattedPrice value={10} /&gt;</code>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Usage
 

@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "test": "vtex-test-tools test",
-    "lint": "tsc --noEmit && eslint --ext ts,tsx ."
+    "test": "vtex-test-tools test"
   },
   "dependencies": {
     "@vtex/css-handles": "^1.0.0",
@@ -9,9 +8,10 @@
     "ramda": "^0.26.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-intl": "^2.7.2"
+    "react-intl": "^4.3.1"
   },
   "devDependencies": {
+    "@apollo/react-testing": "^3.1.3",
     "@types/classnames": "^2.2.7",
     "@types/graphql": "^14.2.0",
     "@types/jest": "^24.0.11",
@@ -19,14 +19,11 @@
     "@types/prop-types": "^15.7.0",
     "@types/ramda": "^0.26.5",
     "@types/react": "^16.8.10",
-    "@types/react-intl": "^2.3.17",
-    "@vtex/test-tools": "^1.1.0",
-    "apollo-client": "^2.5.1",
-    "eslint": "^5.16.0",
-    "eslint-config-vtex-react": "^4.1.0",
-    "prettier": "^1.18.2",
-    "tslint-eslint-rules": "^5.4.0",
-    "typescript": "3.5.2"
+    "@vtex/test-tools": "^3.1.0",
+    "typescript": "3.5.2",
+    "vtex.format-currency": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.format-currency@0.1.3/public/@types/vtex.format-currency",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.98.1/public/@types/vtex.render-runtime",
+    "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.112.27/public/@types/vtex.styleguide"
   },
   "version": "0.3.2"
 }

@@ -19,7 +19,7 @@ const FormattedPrice: FC<FormattedPriceProps & InjectedIntlProps> = ({
 }
 
 interface FormattedPriceProps {
-  value: number
+  value?: number | null
 }
 
 export default injectIntl(FormattedPrice)

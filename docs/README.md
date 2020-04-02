@@ -2,6 +2,8 @@
 
 > Formatting utilities for displaying prices.
 
+<img width="131" alt="component rendering values TBD, free and 10 in BRL" src="https://user-images.githubusercontent.com/10223856/78278011-cc2f2600-74eb-11ea-9e1b-2b74c31875aa.png">
+
 ## Usage
 
 To use this app, you first need to add it in your `manifest.json` file, like so
